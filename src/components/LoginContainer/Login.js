@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import WelcomeScreen from "../WelcomeContainer/WelcomeScreen";
 
 
 class Login extends Component {
@@ -23,11 +25,14 @@ class Login extends Component {
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
                 </div>
-
-                <button type="submit" className="btn btn-primary btn-block">Submit</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+                
+                    <Link to ={"/welcome-screen"}>
+                    <button type="submit" className="btn btn-primary btn-block" 
+                    >Submit</button>
+                    </Link>
+                    <p className="forgot-password text-right">
+                        Forgot <a href="#">password?</a>
+                    </p>
             </form>
         );
     }
