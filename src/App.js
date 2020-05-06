@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Login from "./components/LoginContainer/Login.js";
 import SignUp from "./components/SignUpContainer/SignUp.js";
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
-import GameStats from './components/GameStats/GameStats';
-import Donate from './components/Donate/Donate';
+import GameStats from './components/GameStatsContainer/GameStats';
+import Donate from './components/DonateContainer/Donate';
 
 
 function App() {
