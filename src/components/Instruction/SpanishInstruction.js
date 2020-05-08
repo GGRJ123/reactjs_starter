@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './Spanish.css';
+import RegresarButton from '../Buttons/RegresarButton';
 
 class SpanishInstruction extends Component{
     render(){
@@ -40,9 +41,8 @@ class SpanishInstruction extends Component{
                     Complete my avatar = completar mi avatar Login = Inicia Sesion
                 </p>
                 <hr></hr>
-                <button className = "return_button">
-                Regresar al juego
-                </button>
+                <br></br>
+                <RegresarButton/>
             </form>
         )
     }
