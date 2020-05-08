@@ -9,6 +9,7 @@ import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import GameStats from './components/GameStatsContainer/GameStats';
 import Donate from './components/DonateContainer/Donate';
 import ForgotPassword from './components/PasswordContainer/ForgotPassword';
+import SpanishPage from './components/Instruction/SpanishInstruction';
 
 
 function App() {
@@ -23,13 +24,16 @@ function App() {
                 <Link className="nav-link" to={"/sign-in"}>Login</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
+                <Link className="nav-link" to={"/sign-up"}>Sign Up</Link>
               </li>
               <li className = "nav-item">
-                  <Link className = "nav-link" to={"/game-stats"}>Game stats</Link>
+                  <Link className = "nav-link" to={"/game-stats"}>Game Stats</Link>
               </li>
               <li className = "nav-item">
                   <Link className = "nav-link" to={"/donate"}>Donate</Link>
+              </li>
+              <li className = "nav-item">
+                    <Link className = "nav-link" to = {"/spanish-instruction"}>Spanish Instruction</Link>
               </li>
             </ul>
           </div>
@@ -46,6 +50,7 @@ function App() {
             <Route path = "/game-stats" component={GameStats}/>
             <Route path="/donate" component={Donate}/>
             <Route path ="/forgot-password" component = {ForgotPassword}/>
+            <Route path = "/spanish-instruction" component = {SpanishPage}/>
           </Switch>
         </div>
       </div>

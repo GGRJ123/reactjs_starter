@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {Switch, Route, Link } from "react-router-dom";
 import Login from "../LoginContainer/Login";
 
 class SignUp extends Component {
