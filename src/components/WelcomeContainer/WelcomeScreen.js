@@ -1,20 +1,16 @@
-import React, { Component } from "react";
-import Login from "../LoginContainer/Login";
+import React from "react";
 import LoginButton from "../Buttons/LoginButton";
 import SignupButton from "../Buttons/SignupButton";
 
-class WelcomeScreen extends Component {
-    render() {
+function WelcomeScreen(){
         return (
-            <div>
-                <h3>React Welcome Component</h3>
+            <div className = "welcome">
+                <h3>Welcome!</h3>
                 <LoginButton/>
                 <SignupButton/>
                 
-            </div>
-            
-        );
-    }
+            </div>    
+        )
 }
 
 export default WelcomeScreen;

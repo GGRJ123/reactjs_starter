@@ -8,6 +8,7 @@ import SignUp from "./components/SignUpContainer/SignUp.js";
 import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import GameStats from './components/GameStatsContainer/GameStats';
 import Donate from './components/DonateContainer/Donate';
+import ForgotPassword from './components/PasswordContainer/ForgotPassword';
 
 
 function App() {
@@ -18,9 +19,6 @@ function App() {
           <Link className="navbar-brand" to={"/sign-up"}>Code Strikers ReactJS Starter</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
-                <li className = "nav-item">
-                  <Link className = "nav-link" to={"/welcome-screen"}>Welcome</Link>
-              </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-in"}>Login</Link>
               </li>
@@ -47,6 +45,7 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path = "/game-stats" component={GameStats}/>
             <Route path="/donate" component={Donate}/>
+            <Route path ="/forgot-password" component = {ForgotPassword}/>
           </Switch>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import WelcomeScreen from "../WelcomeContainer/WelcomeScreen";
+import ForgotPassword from '../PasswordContainer/ForgotPassword';
 
 
 class Login extends Component {
@@ -30,9 +31,11 @@ class Login extends Component {
                     <button type="submit" className="btn btn-primary btn-block" 
                     >Submit</button>
                     </Link>
+                    <Link to = {"/forgot-password"}>
                     <p className="forgot-password text-right">
                         Forgot <a href="#">password?</a>
                     </p>
+                    </Link>
             </form>
         );
     }
