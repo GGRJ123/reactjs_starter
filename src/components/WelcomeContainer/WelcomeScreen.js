@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import Login from "../LoginContainer/Login";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import LoginButton from "../Buttons/LoginButton";
+import SignupButton from "../Buttons/SignupButton";
 
 class WelcomeScreen extends Component {
     render() {
         return (
             <div>
                 <h3>React Welcome Component</h3>
-                <Link to ={"/sign-in"}>
-                    <button type="submit" className="btn btn-primary btn-block" 
-                    >Get started</button>
-                    </Link>
+                <LoginButton/>
+                <SignupButton/>
                 
             </div>
             
