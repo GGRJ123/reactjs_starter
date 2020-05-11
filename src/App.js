@@ -9,8 +9,9 @@ import WelcomeScreen from "./components/WelcomeContainer/WelcomeScreen.js";
 import GameStats from './components/GameStatsContainer/GameStats';
 import Donate from './components/DonateContainer/Donate';
 import ForgotPassword from './components/PasswordContainer/ForgotPassword';
-import SpanishPage from './components/Instruction/SpanishInstruction';
-
+import SpanishPage from './components/Instructions/SpanishInstruction';
+import EnglishPage from './components/Instructions/EnglishInstruction';
+import EnglishInstruction from './components/Instructions/EnglishInstruction';
 
 function App() {
   return (<Router>
@@ -35,6 +36,9 @@ function App() {
               <li className = "nav-item">
                     <Link className = "nav-link" to = {"/spanish-instruction"}>Spanish Instruction</Link>
               </li>
+              <li className = "nav-item">
+                    <Link className = "nav-link" to = {"/english-instruction"}>English Instruction</Link> 
+              </li>
             </ul>
           </div>
         </div>
@@ -51,6 +55,7 @@ function App() {
             <Route path="/donate" component={Donate}/>
             <Route path ="/forgot-password" component = {ForgotPassword}/>
             <Route path = "/spanish-instruction" component = {SpanishPage}/>
+            <Route path = "/english-instruction" component = {EnglishInstruction}/>
           </Switch>
         </div>
       </div>

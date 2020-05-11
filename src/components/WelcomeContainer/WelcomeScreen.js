@@ -1,6 +1,6 @@
 import React from "react";
-import LoginButton from "../Buttons/LoginButton";
-import SignupButton from "../Buttons/SignupButton";
+import LoginButton from "../ButtonContainer/LoginButton";
+import SignupButton from "../ButtonContainer/SignupButton";
 
 function WelcomeScreen(){
         return (

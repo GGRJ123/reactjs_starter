@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import './Spanish.css';
-import RegresarButton from '../Buttons/RegresarButton';
+import '../Instructions/Spanish.css';
+import RegresarButton from '../ButtonContainer/RegresarButton';
 
 class SpanishInstruction extends Component{
     render(){
