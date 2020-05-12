@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: #1C8EF9 !important;
+  background: orange !important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -32,11 +32,13 @@ body, html, .App, #root, .auth-wrapper {
   flex-direction: column;
   text-align: left;
 }
-
+/*
+The content of the box
+*/
 .auth-inner {
-  width: 450px;
+  width: 425px;
   margin: auto;
-  background: #ffffff;
+  background: #ededed;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
@@ -44,7 +46,8 @@ body, html, .App, #root, .auth-wrapper {
 }
 
 .auth-wrapper .form-control:focus {
-  border-color: #167bff;
+      background-color: #818285;
+
   box-shadow: none;
 }
 
@@ -72,6 +75,10 @@ body, html, .App, #root, .auth-wrapper {
   color: #167bff;
 }
 
+/*
+button changes size automatically if the box change size
+*/
+
 .wel-button {
   display: inline-block;
   margin-top: 10px;
@@ -79,3 +86,13 @@ body, html, .App, #root, .auth-wrapper {
   background-color: white;
   border-radius: 2em;
 }
+
+.Container{
+    display: flex;
+}
+
+.Row{
+    justify-content: center;
+    margin-bottom: 50px;
+}
+

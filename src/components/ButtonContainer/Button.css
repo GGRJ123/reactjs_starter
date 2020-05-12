@@ -1,0 +1,21 @@
+#dropdown-basic{
+    width: 300px;
+}
+
+#dropdown-basic:hover{
+    background-color: orange;
+
+}
+
+.btn:hover{
+    background-color: orange;
+}
+
+.links:hover{
+    background-color: orange;
+}
+
+.btn{
+      background-color: #818285;
+      border-radius: 20px;
+}

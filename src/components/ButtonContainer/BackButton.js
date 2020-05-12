@@ -2,17 +2,15 @@ import React from 'react';
 import './Button.css';
 import { withRouter } from 'react-router-dom';
 
-function SignupButton(){
+export default function BackButton(){
     const Button = withRouter(({history}) => (
         <button
         type = "button"
-        onClick = {() => {history.push('/sign-up')}}
+        onClick = {() => {history.push('/sign-in')}}
         className="btn btn-primary btn-block">
-        Signup
+        Back
         </button>
     ));
 
     return <Button/>
 }
-
-export default SignupButton;

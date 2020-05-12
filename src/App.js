@@ -2,6 +2,12 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DropDown from './components/DropDownContainer/DropDown';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 import Login from "./components/LoginContainer/Login.js";
 import SignUp from "./components/SignUpContainer/SignUp.js";
@@ -15,35 +21,12 @@ import EnglishInstruction from './components/Instructions/EnglishInstruction';
 
 function App() {
   return (<Router>
+      <Container className = "Container">
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-        <div className="container">
-          <Link className="navbar-brand" to={"/sign-up"}>Code Strikers ReactJS Starter</Link>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Login</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Sign Up</Link>
-              </li>
-              <li className = "nav-item">
-                  <Link className = "nav-link" to={"/game-stats"}>Game Stats</Link>
-              </li>
-              <li className = "nav-item">
-                  <Link className = "nav-link" to={"/donate"}>Donate</Link>
-              </li>
-              <li className = "nav-item">
-                    <Link className = "nav-link" to = {"/spanish-instruction"}>Spanish Instruction</Link>
-              </li>
-              <li className = "nav-item">
-                    <Link className = "nav-link" to = {"/english-instruction"}>English Instruction</Link> 
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+    <Row className = "Row">
+        <DropDown/>
+    </Row>
+    <Row className = "Row welcome">
       <div className="auth-wrapper">
         <div className="auth-inner">
           <Switch>
@@ -59,7 +42,10 @@ function App() {
           </Switch>
         </div>
       </div>
-    </div></Router>
+      </Row>
+    </div>
+    </Container>
+    </Router>
   );
 }
 

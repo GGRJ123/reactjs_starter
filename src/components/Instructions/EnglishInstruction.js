@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import '../Instructions/English.css';
-import RegresarButton from '../ButtonContainer/RegresarButton';
+import BackButton from '../ButtonContainer/BackButton';
+import InstruccionesButton from '../ButtonContainer/InstruccionesButton';
 
 class EnglishInstruction extends Component{
     render(){
@@ -30,7 +31,8 @@ class EnglishInstruction extends Component{
                     click “Play again” button after a game is finished. 
 
                 </p>
-                <RegresarButton/>
+                <BackButton/>
+                <InstruccionesButton/>
             </form>
         )
     }
