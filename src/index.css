@@ -46,8 +46,7 @@ The content of the box
 }
 
 .auth-wrapper .form-control:focus {
-      background-color: #818285;
-
+  border-color: #167bff;
   box-shadow: none;
 }
 
@@ -92,7 +91,16 @@ button changes size automatically if the box change size
 }
 
 .Row{
+    width: 100%;
     justify-content: center;
     margin-bottom: 50px;
+
 }
+
+@media only screen and (max-width: 600px) {
+    body{
+        
+    }
+}
+
 

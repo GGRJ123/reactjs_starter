@@ -4,9 +4,12 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DropDown from './components/DropDownContainer/DropDown';
+import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Logo from './components/Assets/logo.png';
+
 
 
 import Login from "./components/LoginContainer/Login.js";
@@ -22,7 +25,12 @@ import EnglishInstruction from './components/Instructions/EnglishInstruction';
 function App() {
   return (<Router>
       <Container className = "Container">
+
     <div className="App">
+    <Row className = "Row">
+        <Image src={ Logo } alt= "Code Diffrently Logo"
+        className = "logo"/>
+    </Row>
     <Row className = "Row">
         <DropDown/>
     </Row>

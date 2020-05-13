@@ -1,4 +1,12 @@
 .logo{
     margin: 0 auto;
-    height: 75px;
+    height: 70px;
+    width: 200px;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
 }
