@@ -1,12 +1,13 @@
 .logo{
     margin: 0 auto;
-    height: 70px;
+    height: 100px;
     width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .icon{
     height: 40px;
     width: 40px;
     display: flex;
-    justify-content: center;
 }

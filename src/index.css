@@ -91,10 +91,12 @@ button changes size automatically if the box change size
 }
 
 .Row{
-    width: 100%;
     justify-content: center;
     margin-bottom: 50px;
+}
 
+.TopRow{
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
