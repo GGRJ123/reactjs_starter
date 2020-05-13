@@ -7,8 +7,8 @@ class EnglishInstruction extends Component{
     render(){
         return(
             <form className = "English-page">
-                <h1>Instruction</h1>
-                <p>
+                <h1 className = "title">Instruction</h1>
+                <p className = "instruction">
                     The game Rock, Paper, Scissors, is a game to help 
                     people socialize, especially during these times due to
                     the Coronavirus. Whether you want to play with a 
@@ -17,15 +17,15 @@ class EnglishInstruction extends Component{
                     Scissors, there are a few simple steps that you must 
                     practice. 
                 </p>
-                <p>
+                <p className = "instruction">
                     The rules are very simple and probably you 
-                    remember them from your childhood: 
+                    remember them from your childhood: <br></br>
                     If you choose Rock, you will win against Scissors but 
-                    lose against Paper. 
+                    lose against Paper. <br></br>
                     If you choose Scissors, you will win against Paper but 
-                    lose against Rock. 
+                    lose against Rock.  <br></br>
                     If you choose Paper, you will win against Rock but 
-                    lose against Scissors. 
+                    lose against Scissors. <br></br>
                     There can be 3 to 5 rounds. The game ends when 
                     somebody gets 3 wins. If you want to play again, just 
                     click “Play again” button after a game is finished. 

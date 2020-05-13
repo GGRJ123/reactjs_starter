@@ -34,7 +34,8 @@ class SpanishInstruction extends Component{
                 <hr></hr>
                 <p>
                     Play = Jugar Play again = jugar de nuevo Donate = Donar <br></br>
-                    Rematch = revancha New opponent = Nuevo oponente
+                    Rematch = revancha <br></br>
+                    New opponent = Nuevo oponente
                 </p>
                 <hr></hr>
                 <p>
